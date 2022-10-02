@@ -11,6 +11,11 @@
 		BA70A26027386F7F0001FA50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70A25F27386F7F0001FA50 /* ContentView.swift */; };
 		BA70A26227386F810001FA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA70A26127386F810001FA50 /* Assets.xcassets */; };
 		BA70A26527386F810001FA50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA70A26427386F810001FA50 /* Preview Assets.xcassets */; };
+		BA70A26C27386F9C0001FA50 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70A26B27386F9C0001FA50 /* ImagePicker.swift */; };
+		BA70A26E27386FA90001FA50 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70A26D27386FA90001FA50 /* Classifier.swift */; };
+		BA70A27027386FAE0001FA50 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70A26F27386FAE0001FA50 /* ImageClassifier.swift */; };
+		BA70A27227386FBD0001FA50 /* ParrotsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BA70A27127386FBD0001FA50 /* ParrotsClassifier.mlmodel */; };
+		BA70A27627387CB20001FA50 /* PredictionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70A27527387CB20001FA50 /* PredictionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		BA70A25F27386F7F0001FA50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA70A26127386F810001FA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA70A26427386F810001FA50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA70A26B27386F9C0001FA50 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BA70A26D27386FA90001FA50 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		BA70A26F27386FAE0001FA50 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		BA70A27127386FBD0001FA50 /* ParrotsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ParrotsClassifier.mlmodel; sourceTree = "<group>"; };
+		BA70A274273873B40001FA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BA70A27527387CB20001FA50 /* PredictionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,12 @@
 		BA70A25C27386F7F0001FA50 /* ParrotSpecies */ = {
 			isa = PBXGroup;
 			children = (
+				BA70A274273873B40001FA50 /* Info.plist */,
+				BA70A2732738703F0001FA50 /* Models */,
+				BA70A26B27386F9C0001FA50 /* ImagePicker.swift */,
+				BA70A26D27386FA90001FA50 /* Classifier.swift */,
+				BA70A26F27386FAE0001FA50 /* ImageClassifier.swift */,
+				BA70A27527387CB20001FA50 /* PredictionList.swift */,
 				BA70A25D27386F7F0001FA50 /* ParrotSpeciesApp.swift */,
 				BA70A25F27386F7F0001FA50 /* ContentView.swift */,
 				BA70A26127386F810001FA50 /* Assets.xcassets */,
@@ -65,6 +82,14 @@
 				BA70A26427386F810001FA50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA70A2732738703F0001FA50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA70A27127386FBD0001FA50 /* ParrotsClassifier.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +119,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
@@ -137,6 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA70A26E27386FA90001FA50 /* Classifier.swift in Sources */,
+				BA70A27227386FBD0001FA50 /* ParrotsClassifier.mlmodel in Sources */,
+				BA70A26C27386F9C0001FA50 /* ImagePicker.swift in Sources */,
+				BA70A27627387CB20001FA50 /* PredictionList.swift in Sources */,
+				BA70A27027386FAE0001FA50 /* ImageClassifier.swift in Sources */,
 				BA70A26027386F7F0001FA50 /* ContentView.swift in Sources */,
 				BA70A25E27386F7F0001FA50 /* ParrotSpeciesApp.swift in Sources */,
 			);
@@ -272,6 +305,8 @@
 				DEVELOPMENT_TEAM = VKLYFF6299;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParrotSpecies/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to take pictrues of parrots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +336,8 @@
 				DEVELOPMENT_TEAM = VKLYFF6299;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParrotSpecies/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to take pictrues of parrots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
